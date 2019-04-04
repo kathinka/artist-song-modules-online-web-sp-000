@@ -1,4 +1,4 @@
-module findable
+module Findable
 
   def find_by_name(name)
     self.all.detect{|a|a.name == name}
@@ -7,5 +7,5 @@ module findable
   def to_param
     name.downcase.gsub(' ', '-')
   end
-  
+
 end
