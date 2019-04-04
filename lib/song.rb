@@ -1,6 +1,6 @@
 require 'pry'
 
-class Song  
+class Song
   include Findable
   extend Memorable
     include Paramable
