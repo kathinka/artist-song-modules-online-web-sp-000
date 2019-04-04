@@ -1,11 +1,12 @@
 require 'pry'
+require_relative './concerns/memorable'
 
 class Artist
   attr_accessor :name
   attr_reader :songs
 
   extend Memorable
-
+  
   @@artists = []
 
   def initialize
